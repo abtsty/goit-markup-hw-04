@@ -598,8 +598,8 @@ ul {
   padding: 40px 32px;
 }
 
-.overlay-text {
-}
+/* .overlay-text {
+} */
 
 .works-wrap:hover .overlay {
   transform: translateY(0);
@@ -644,8 +644,8 @@ ul {
   margin-right: 120px;
 }
 
-.footer-social {
-}
+/* .footer-social {
+} */
 
 .footer-list {
   display: flex;
