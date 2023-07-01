@@ -365,7 +365,7 @@ ul {
 
 .our-team-wrap {
   text-align: center;
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-social-wrap {
@@ -487,9 +487,10 @@ ul {
   border-radius: 4px;
   border: 1px solid #e7e9fc;
 
-  transition-property: color backgroung-color box-shadow border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn-wrap {
@@ -557,6 +558,14 @@ ul {
 }
 
 .works-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works-link:hover,
+.works-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Overlay */
@@ -586,7 +595,7 @@ ul {
   letter-spacing: 0.32px;
   background-color: #4d5ae5;
 
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
 }
 
 .overlay-text {
