@@ -173,6 +173,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+  font-weight: inherit;
   color: var(--secondary-text-color);
 }
 
@@ -607,6 +608,10 @@ ul {
 } */
 
 .works-wrap:hover .overlay {
+  transform: translateY(0);
+}
+
+.works-link:focus .overlay {
   transform: translateY(0);
 }
 
